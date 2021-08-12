@@ -1,0 +1,39 @@
+{
+  "name": "client-food-app",
+  "version": "1.0.0",
+  "description": "a food delivery app for a fake client",
+  "main": "server",
+  "scripts": {
+    "client-install": "cd ../client && npm install",
+    "client": "cd ../client && npm start",
+    "server": "nodemon server bin/dev",
+    "dev": "concurrently  \"npm run client\" \"nodemon server bin/dev'\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.16.0",
+    "concurrently": "^4.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-form-data": "^2.0.10",
+    "express-graphql": "^0.9.0",
+    "express-session": "^1.16.2",
+    "graphql": "^14.4.2",
+    "mongoose": "^5.6.9",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "pusher": "^3.0.0",
+    "pusher-js": "^5.0.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "stripe": "^7.10.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "morgan": "^1.9.1"
+  }
+}
